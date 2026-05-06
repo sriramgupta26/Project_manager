@@ -1,0 +1,21 @@
+{
+  "name": "team-task-manager",
+  "version": "1.0.0",
+  "description": "Full-stack team task manager with authentication, projects, tasks, dashboard, and role-based access control.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "health": "node -e \"fetch('http://localhost:' + (process.env.PORT || 3000) + '/api/health').then(r => { if (!r.ok) process.exit(1); return r.json(); }).then(console.log)\""
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "task-manager",
+    "railway",
+    "full-stack",
+    "rbac"
+  ],
+  "author": "",
+  "license": "MIT"
+}
